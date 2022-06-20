@@ -1,0 +1,1282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+/* Pagina Principal */
+
+
+/* body */
+
+.bodyPrincipal{
+    background-image: url(./Img/3913676.jpg);
+    backdrop-filter: blur(3px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    margin-top: 100px;
+}
+
+/* titulo de la pagina */
+
+.logo-uva{
+    width: 8vw;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 3vw;
+    padding-top: 30px;
+}
+
+h1{
+   
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 15px;
+}
+
+.tituloSeccion{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+/* NavBar */
+
+.NavBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    gap: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+.links li{
+    margin-top: 30px;
+}
+
+.links li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff85;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+  
+.links li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+/* Sobre Nosotros */
+
+.seccionSN{
+        background-color: rgba(32, 30, 30, 0.521);
+}
+
+.sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.descBox{
+    width: 60%;
+}
+
+.linkDesc{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.384);
+}
+
+/* Sedes */
+
+.sedes{
+    display: flex;
+    justify-content: center;  
+    gap: 10px;
+    
+}
+
+.sede{
+    width: 47%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.sedeDesc{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.imgCont{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imgSede{
+    width: 100%;
+    height: 100%;
+}
+
+.tituloSede{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+
+.botonIrSede{
+    width: 30%;
+    height: 40px;
+    margin-top: 22px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.botonIrSede:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Productos */
+
+.productos{
+    display: flex;
+    gap: 30px;
+    justify-content: center;    
+}
+
+.producto{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.cardVino{
+    width: 250px;
+    height: 400px;
+    background-image: url(./Img/fondovino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid white;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.fotoVino{
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.desc-vino{
+    width: 100%;
+    height: 30%;
+    /* background-color: #2e1c29; */
+    background-color: #0000001e;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.botonComprar{
+    margin-right: 20px;
+    width: 150%;
+    height: 50px;
+    margin-top: 22px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    
+}
+
+.botonComprar:hover{
+    background-color: white;
+    color: black;
+}
+
+/* contacto */
+.contacto{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.tituloMail{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mail{ 
+    width: 250px;
+    height: 35px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+}
+
+.botonEnviar{
+    width: 75px;
+    height: 37px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+}
+
+/* Footer */
+
+.footerPrincipal{
+    background-color: #1d151b91;
+    backdrop-filter: blur(10px);
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.linkFooter{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Sede Buenos Aires */
+
+.bodyBsas{
+    background-image: url(./Img/fondoBsas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.tituloBsAs{
+    color: white;
+}
+
+.seccionProductos{
+    backdrop-filter: blur(20px);
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+/* Vino Tinto */
+
+.bodyVinoTinto{
+    background-image: url(./Img/fondoBsas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+
+}
+
+.vino-desc-cont{
+    width: 50vw;
+    height: 60vh;
+    background-image: url(./Img/fondovino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    color: white;
+
+}
+
+.vino-desc-cont h2{
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-flow: start;
+}
+
+.precio{
+    color: white;
+    font-family:'Montserrat';
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.estrellas{
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.fotoVinoTinto{
+    margin-top: 75px;
+    height: 400px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.fondoVino{
+    height: 500px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.711);
+    padding: 30px;
+}
+
+
+.info-vino{
+    display: flex;
+}
+
+.textoVinoTinto{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botonAgregarAlCarrito{
+    margin-right: 20px;
+    width: 50%;
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+}
+
+.botonAgregarAlCarrito:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Vino blanco */
+.bodyVinoBlanco{
+    background-image: url(./Img/fondoBsas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 90vh;
+}
+.vinoBlanco-desc-cont{
+    width: 50vw;
+    height: 60vh;
+    background-image: url(./Img/fondovino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    color: white;
+
+}
+
+.vinoBlanco-desc-cont h2{
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-flow: start;
+}
+
+.precioVinoBlanco{
+    color: white;
+    font-family:'Montserrat';
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.estrellasVinoBlanco{
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.fotoVinoBlanco{
+    margin-top: 75px;
+    height: 400px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.fondoVinoBlanco{
+    height: 500px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.711);
+    padding: 30px;
+}
+
+
+.info-vinoBlanco{
+    display: flex;
+}
+
+.textoVinoBlanco{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botonAgregarAlCarritoVinoBlanco{
+    margin-right: 20px;
+    width: 50%;
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+}
+
+.botonAgregarAlCarritoVinoBlanco:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Vino Espumante */
+.bodyVinoEspumante{
+    background-image: url(./Img/fondoBsas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 90vh;
+}
+.vinoEspumante-desc-cont{
+    width: 50vw;
+    height: 60vh;
+    background-image: url(./Img/fondovino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    color: white;
+
+}
+
+.vinoEspumante-desc-cont h2{
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-flow: start;
+}
+
+.precioVinoEspumante{
+    color: white;
+    font-family:'Montserrat';
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.estrellasVinoEspumante{
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.fotoVinoEspumante{
+    margin-top: 75px;
+    height: 400px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.fondoVinoEspumante{
+    height: 500px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.711);
+    padding: 30px;
+}
+
+
+.info-vinoEspumante{
+    display: flex;
+}
+
+.textoVinoEspumante{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botonAgregarAlCarritoVinoEspumante{
+    margin-right: 20px;
+    width: 50%;
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+}
+
+.botonAgregarAlCarritoVinoEspumante:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Vino Rosado */
+.bodyVinoRosado{
+    background-image: url(./Img/fondoBsas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.vinoRosado-desc-cont{
+    width: 50vw;
+    height: 60vh;
+    background-image: url(./Img/fondovino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    color: white;
+
+}
+
+.vinoRosado-desc-cont h2{
+    color: white;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-flow: start;
+}
+
+.precioVinoRosado{
+    color: white;
+    font-family:'Montserrat';
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.estrellasVinoRosado{
+    font-size: 25px;
+    display: flex;
+    flex-flow: start;
+}
+
+.fotoVinoRosado{
+    margin-top: 75px;
+    height: 400px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.fondoVinoRosado{
+    height: 500px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.711);
+    padding: 30px;
+}
+
+
+.info-vinoRosado{
+    display: flex;
+}
+
+.textoVinoRosado{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botonAgregarAlCarritoVinoRosado{
+    margin-right: 20px;
+    width: 50%;
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+}
+
+.botonAgregarAlCarritoVinoRosado:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Sede Mendoza */
+
+
+:root {  
+    --fs-xl: 1.8rem;
+    --fs-400: 1rem;
+  }
+  
+  @media (min-width: 80em) {
+    :root {
+      --fs-xl: 6rem;
+      --fs-400: 1.3rem;
+    }
+  }
+
+
+.bodyMendoza{
+    background: linear-gradient(rgba(0, 0, 0, 0.805), rgba(0, 0, 0, 0.662)), 
+    url(./Img/fondoMendoza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 98.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloMz{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloVino{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vinolenciaMdz{
+    color: white;
+    font-size: var(--fs-xl);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 15px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tituloMdz{
+    color: white;
+    font-size: var(--fs-xl);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 15px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.botonVisitar{
+    width: 30%;
+    height: 50px;
+    margin-top: 22px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.326);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botonVisitar:hover{
+    background-color: rgba(0, 0, 0, 0.711)
+}
+
+/* Inicio Mendoza */
+
+
+/* NavMdz */
+
+.mdzNav{
+    background-color: #121212;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 6%;
+}
+
+.linksMdz{
+    list-style: none;
+    display: flex;
+    gap: 8vw;
+    align-items: center;
+    text-align: center;
+}
+
+.linksMdz li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: var(--fs-400);
+    letter-spacing: 4px;
+    font-weight: lighter;
+    position: relative;
+}
+
+.linksMdz li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff85;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.linksMdz li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.hamburguesa{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    right: 2rem;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+@media(max-width: 950px){
+    .hamburguesa{
+        display: flex;
+    }
+
+    .linksMdz{
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logoNav{
+        position: absolute;
+        left: 1rem;
+        top: 1.5rem;
+    }
+
+    .mdzNav{
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 30px;
+    }
+
+    .linksMdz.active{
+        display: flex;
+    }
+}
+
+
+/* Productos Mdz */
+
+.productosMdz{
+    height: 70vh;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.545), rgba(0, 0, 0, 0.464)), 
+    url(./Img/vinedo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.botonVisitarMdz{
+    width: 180px;
+    height: 50px;
+    margin-top: 22px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.197);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.botonVisitarMdz:hover{
+    background-color: rgba(0, 0, 0, 0.711)
+}
+
+.descProductos{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    width: 15%;
+    margin-left: 50px;
+}
+/* experiencias */
+
+.experiencias{
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+}
+
+.tituloExp{
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-weight: bolder;
+}
+
+.actividadesPadre{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;  
+    gap: 10px;
+    width: 100%;
+}
+
+.actividadesHijo{
+    display: flex;
+    gap: 2px;
+    justify-content: center;  
+    width: 100%;
+}
+
+.actividad{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.actividadDesc{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.imgContActividad{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#uvas{
+    background: linear-gradient(rgba(0, 0, 0, 0.545), rgba(0, 0, 0, 0.464)), 
+    url(./Img/uvas.jpg);
+    background-size: cover;
+}
+
+#bodega{
+    background: linear-gradient(rgba(0, 0, 0, 0.545), rgba(0, 0, 0, 0.464)), 
+    url(./Img/bodega2.jpg);
+    background-size: cover;
+}
+
+#tour{
+    background: linear-gradient(rgba(0, 0, 0, 0.545), rgba(0, 0, 0, 0.464)), 
+    url(./Img/tour.jpg);
+    background-size: cover;
+}
+
+#boda{
+    background: linear-gradient(rgba(0, 0, 0, 0.545), rgba(0, 0, 0, 0.464)), 
+    url(./Img/boda.jpg);
+    background-size: cover;
+}
+
+.imgActividad{
+    width: 100%;
+}
+
+
+.botonExp{
+    width: 160px;
+    height: 50px;
+    margin-top: 22px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.754);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;  
+    text-align: center;
+}
+
+.botonExp:hover{
+    background-color: rgba(0, 0, 0, 0.711)
+}
+
+.footerMdz{
+    background-color: #121212;
+    backdrop-filter: blur(10px);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.itemsFooter{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.boxMailMdz{
+    background-color: white;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    justify-content: center;
+}
+
+.mailMdz{ 
+    height: 35px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+}
+
+.botonEnviarMdz{
+    width: 100px;
+    height: 100%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: #121212;
+    color: white;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+}
+
+@media(max-width: 950px){
+    .actividadesHijo{
+        flex-flow: column;
+    }
+    .actividad{
+        width: 100%;
+    }
+}
+
+/* CONTACTO */
+
+.contactoMDZ{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 73vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.908), rgba(0, 0, 0, 0.874)),
+    url(./Img/fondocontacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.tituloContacto{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    margin-top: 40px;
+}
+
+.info{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    gap: 50px;
+}
+
+@media(max-width: 1000px){
+    .mapa{
+        width: 80vw;
+    }
+
+    .info{
+        gap: 30px;
+    }
+}
+
+/* Sobre Nosotros */
+
+.sobrenosotros{
+    background: linear-gradient(rgba(0, 0, 0, 0.867), rgba(0, 0, 0, 0.85)),
+    url(./Img/fondosn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center ;
+    margin: 0;
+    height: 73vh;
+}
+
+.snDesc{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center ;
+    border: 1px solid white;
+    width: 50vw;
+    backdrop-filter: blur(20px);
+}
+
+.snDesc p{
+    width: 80%;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.snDesc h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 7px;
+}
+
+@media(max-width: 1000px){
+    .snDesc{
+       width: 90vw;
+    }
+
+    .snDesc h2{
+        font-size: 20px;
+    }
+    
+    .snDesc p{
+        font-size: 18px;
+    }
+}
+
+/*EVENTOS*/
+
+.seccion-eventos{
+    background: linear-gradient(rgba(0, 0, 0, 0.735), rgba(0, 0, 0, 0.786)),
+    url(./Img/fondoeventos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+.eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 73vh;
+}
+
+.evento{
+    width: 45vw;
+    height: 30vh;
+    display: flex;
+    background-color: #121212;
+    color: white;
+}
+
+.eventoDesc{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botonEventosMdz{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: #121212;
+    color: white;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1500px){
+    .eventos{
+        flex-flow: column;
+        height: 100%;
+    }
+    
+    .evento{
+        flex-flow: column;
+        height: 100%;
+    }
+
+    .eventoDesc{
+        text-align: center;
+    }
+}
+
+/* VISITA */
+
+.seccion-visita{
+    background: linear-gradient(rgba(0, 0, 0, 0.772), rgba(0, 0, 0, 0.84)),
+    url(./Img/fondovisita.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
