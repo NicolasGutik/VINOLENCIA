@@ -34,7 +34,22 @@
                     <h3>VISITA LOS VIÑEDOS</h3>
                     <p>precio: 1000</p>
                     <p>fecha</p>
-                    <input class="botonEventosMdz" type="button" value="RESERVA">
+                    <div class="container">
+                        <a data-modal="modal-one">RESERVA</a>
+                      </div>
+                      <div class="modal" id="modal-one">
+                        <div class="modal-bg modal-exit"></div>
+                        <div class="modal-container">
+                            <form>
+                                <p>Ingrese correo para reservar</p>
+                                <div class="boxMailMdz">
+                                    <input class="mailMdz" id="correo" name="correo" type="email" placeholder="Escriba tu mail aqui">
+                                    <input class="botonEnviarMdz" type="submit" value="enviar" onclick="pruebaemail(form.correo.value)">
+                                </div>
+                                </form>
+                          <button class="modal-close modal-exit">X</button> 
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="evento">
@@ -43,7 +58,22 @@
                     <h3>VISITA LAS BODEGAS</h3>
                     <p>precio: 1000</p>
                     <p>fecha</p>
-                    <input class="botonEventosMdz" type="button" value="RESERVA">
+                    <div class="container">
+                        <a data-modal="modal-one">RESERVA</a>
+                      </div>
+                      <div class="modal" id="modal-one">
+                        <div class="modal-bg modal-exit"></div>
+                        <div class="modal-container">
+                            <form>
+                                <p>Ingrese correo para reservar</p>
+                                <div class="boxMailMdz">
+                                    <input class="mailMdz" id="correo" name="correo" type="email" placeholder="Escriba tu mail aqui">
+                                    <input class="botonEnviarMdz" type="submit" value="enviar" onclick="pruebaemail(form.correo.value)">
+                                </div>
+                                </form>
+                          <button class="modal-close modal-exit">X</button>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
