@@ -200,72 +200,6 @@ h1{
     color: black;
 }
 
-/* Productos */
-
-.productos{
-    display: flex;
-    gap: 30px;
-    justify-content: center;    
-}
-
-.producto{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.cardVino{
-    width: 250px;
-    height: 400px;
-    background-image: url(./Img/fondovino.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    border: 1px solid white;
-    flex-flow: column;
-    overflow: hidden;
-}
-
-.fotoVino{
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
-
-.desc-vino{
-    width: 100%;
-    height: 30%;
-    /* background-color: #2e1c29; */
-    background-color: #0000001e;
-    backdrop-filter: blur(4px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-}
-
-.botonComprar{
-    margin-right: 20px;
-    width: 150%;
-    height: 50px;
-    margin-top: 22px;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border-radius: 4px;
-    
-}
-
-.botonComprar:hover{
-    background-color: white;
-    color: black;
-}
-
 /* contacto */
 .contacto{
     display: flex;
@@ -324,22 +258,105 @@ h1{
     background-image: url(./Img/fondoBsas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+ 
 }
 
 .tituloBsAs{
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 3vw;
+    padding-top: 30px;
+    
 }
 
 .seccionProductos{
     backdrop-filter: blur(20px);
-    width: 80%;
-    height: 700px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
+   
 }
 
+.productos{
+    display: flex;
+    gap: 30px;
+    justify-content: center; 
+    width: 100%;
+    height: auto ;
+    flex-wrap: wrap;
+    
+}
+
+.producto{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto
+}
+
+.cardVino{
+    width: 80%;
+    height: 400px;
+    background-image: url(./Img/fondovino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid white;
+    flex-flow: column;
+    overflow: hidden;
+    height: auto;
+}
+
+.fotoVino{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.desc-vino{
+    width: 100%;
+    height: auto;
+    background-color: #0000001e;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.botonComprar{
+    margin-right: 20px;
+    width: 120%;
+    height: auto;
+    margin-top: 22px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    
+}
+
+.botonComprar:hover{
+    background-color: white;
+    color: black;
+    
+}
 /* Vino Tinto */
 
 .bodyVinoTinto{
@@ -350,13 +367,13 @@ h1{
     justify-content: center;
     align-items: center;
     height: 90vh;
-    
-
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.vino-desc-cont{
-    width: 50vw;
-    height: 60vh;
+.vinoTinto-desc-cont{
+    width: 100%;
+    height: auto;
     background-image: url(./Img/fondovino.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -365,48 +382,63 @@ h1{
     flex-flow: column;
     overflow: hidden;
     color: white;
+    border: 2px solid white;
+    flex-wrap: wrap;
 
 }
 
-.vino-desc-cont h2{
+.vinoTinto-desc-cont h2{
     color: white;
     font-family: 'Montserrat';
     display: flex;
     flex-flow: start;
 }
 
-.precio{
+.tituloVinoTinto{
+    color: white;
+    font-family:'Montserrat';
+    display: flex;
+    flex-flow: start;
+    flex-wrap: wrap;
+}
+
+.precioVinoTinto{
     color: white;
     font-family:'Montserrat';
     font-size: 25px;
     display: flex;
     flex-flow: start;
+    flex-wrap: wrap;
 }
 
-.estrellas{
+.estrellasVinoTinto{
     font-size: 25px;
     display: flex;
     flex-flow: start;
+    flex-wrap: wrap;
+
 }
 
 .fotoVinoTinto{
     margin-top: 75px;
-    height: 400px;
-    width: 100px;
+    height: auto;
+    width: 50%;
     margin-left: 50px;
+    flex-wrap: wrap;
 }
 
-.fondoVino{
-    height: 500px;
-    width: 700px;
+.fondoVinoTinto{   
+    height: auto;
+    width: 50%;
     margin-left: 100px;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.711);
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 
-.info-vino{
+.info-VinoTinto{
     display: flex;
 }
 
@@ -416,12 +448,13 @@ h1{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
-.botonAgregarAlCarrito{
+.botonAgregarAlCarritoVinoTinto{
     margin-right: 20px;
-    width: 50%;
-    height: 50px;
+    width: auto;
+    height: auto;
     margin-top: 22px;
     margin-left: 50%;
     border: 2px solid #ffffff;
@@ -429,9 +462,10 @@ h1{
     background-color: transparent;
     color: white;
     border-radius: 4px;
+    flex-wrap: wrap;
 }
 
-.botonAgregarAlCarrito:hover{
+.botonAgregarAlCarritoVinoTinto:hover{
     background-color: white;
     color: black;
 }
@@ -443,12 +477,14 @@ h1{
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     height: 90vh;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .vinoBlanco-desc-cont{
-    width: 50vw;
-    height: 60vh;
+    width: 100%;
+    height: auto;
     background-image: url(./Img/fondovino.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -457,7 +493,8 @@ h1{
     flex-flow: column;
     overflow: hidden;
     color: white;
-
+    border: 2px solid white;
+    flex-wrap: wrap;
 }
 
 .vinoBlanco-desc-cont h2{
@@ -467,34 +504,46 @@ h1{
     flex-flow: start;
 }
 
+.tituloVinoBlanco{
+    color: white;
+    font-family:'Montserrat';
+    display: flex;
+    flex-flow: start;
+    flex-wrap: wrap;
+}
+
 .precioVinoBlanco{
     color: white;
     font-family:'Montserrat';
     font-size: 25px;
     display: flex;
     flex-flow: start;
+    flex-wrap: wrap;
 }
 
 .estrellasVinoBlanco{
     font-size: 25px;
     display: flex;
     flex-flow: start;
+    flex-wrap: wrap;
 }
 
 .fotoVinoBlanco{
     margin-top: 75px;
-    height: 400px;
-    width: 100px;
+    height: auto;
+    width: 50%;
     margin-left: 50px;
+    flex-wrap: wrap;
 }
 
 .fondoVinoBlanco{
-    height: 500px;
-    width: 700px;
+    height: auto;
+    width: 50%;
     margin-left: 100px;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.711);
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 
@@ -508,12 +557,13 @@ h1{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 .botonAgregarAlCarritoVinoBlanco{
     margin-right: 20px;
-    width: 50%;
-    height: 50px;
+    width: auto;
+    height: auto;
     margin-top: 22px;
     margin-left: 50%;
     border: 2px solid #ffffff;
@@ -521,6 +571,7 @@ h1{
     background-color: transparent;
     color: white;
     border-radius: 4px;
+    flex-wrap: wrap;
 }
 
 .botonAgregarAlCarritoVinoBlanco:hover{
@@ -535,12 +586,15 @@ h1{
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     height: 90vh;
+    width: 100%;
+    flex-wrap: wrap;
+
 }
 .vinoEspumante-desc-cont{
-    width: 50vw;
-    height: 60vh;
+    width: 100%;
+    height: auto;
     background-image: url(./Img/fondovino.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -549,6 +603,8 @@ h1{
     flex-flow: column;
     overflow: hidden;
     color: white;
+    border: 2px solid white;
+    flex-wrap: wrap;
 
 }
 
@@ -559,34 +615,46 @@ h1{
     flex-flow: start;
 }
 
+.tituloVinoEspumante{
+    color: white;
+    font-family:'Montserrat';
+    display: flex;
+    flex-flow: start;
+    flex-wrap: wrap;
+}
+
 .precioVinoEspumante{
     color: white;
     font-family:'Montserrat';
     font-size: 25px;
     display: flex;
     flex-flow: start;
+    flex-wrap: wrap;
 }
 
 .estrellasVinoEspumante{
     font-size: 25px;
     display: flex;
     flex-flow: start;
+    flex-wrap: wrap;
 }
 
 .fotoVinoEspumante{
     margin-top: 75px;
-    height: 400px;
-    width: 100px;
+    height: auto;
+    width: 50%;
     margin-left: 50px;
+    flex-wrap: wrap;
 }
 
 .fondoVinoEspumante{
-    height: 500px;
-    width: 700px;
+    height: auto;
+    width: 50%;
     margin-left: 100px;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.711);
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 
@@ -600,12 +668,13 @@ h1{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 .botonAgregarAlCarritoVinoEspumante{
     margin-right: 20px;
-    width: 50%;
-    height: 50px;
+    width: auto;
+    height: auto;
     margin-top: 22px;
     margin-left: 50%;
     border: 2px solid #ffffff;
@@ -613,6 +682,7 @@ h1{
     background-color: transparent;
     color: white;
     border-radius: 4px;
+    flex-wrap: wrap;
 }
 
 .botonAgregarAlCarritoVinoEspumante:hover{
@@ -629,11 +699,13 @@ h1{
     justify-content: center;
     align-items: center;
     height: 90vh;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .vinoRosado-desc-cont{
-    width: 50vw;
-    height: 60vh;
+    width: 100%;
+    height: auto;
     background-image: url(./Img/fondovino.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -642,7 +714,8 @@ h1{
     flex-flow: column;
     overflow: hidden;
     color: white;
-
+    border: 2px solid white;
+    flex-wrap: wrap;
 }
 
 .vinoRosado-desc-cont h2{
@@ -652,12 +725,21 @@ h1{
     flex-flow: start;
 }
 
+.tituloVinoRosado{
+    color: white;
+    font-family:'Montserrat';
+    display: flex;
+    flex-flow: start;
+    flex-wrap: wrap;
+}
+
 .precioVinoRosado{
     color: white;
     font-family:'Montserrat';
     font-size: 25px;
     display: flex;
     flex-flow: start;
+    flex-wrap: wrap;
 }
 
 .estrellasVinoRosado{
@@ -668,18 +750,20 @@ h1{
 
 .fotoVinoRosado{
     margin-top: 75px;
-    height: 400px;
-    width: 100px;
+    height: auto;
+    width: 50%;
     margin-left: 50px;
+    flex-wrap: wrap;
 }
 
 .fondoVinoRosado{
-    height: 500px;
-    width: 700px;
+    height: auto;
+    width: 50%;
     margin-left: 100px;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.711);
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 
@@ -693,12 +777,13 @@ h1{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 
 .botonAgregarAlCarritoVinoRosado{
     margin-right: 20px;
-    width: 50%;
-    height: 50px;
+    width: auto;
+    height: auto;
     margin-top: 22px;
     margin-left: 50%;
     border: 2px solid #ffffff;
@@ -706,6 +791,7 @@ h1{
     background-color: transparent;
     color: white;
     border-radius: 4px;
+    flex-wrap: wrap;
 }
 
 .botonAgregarAlCarritoVinoRosado:hover{
