@@ -255,8 +255,9 @@ h1{
 /* Sede Buenos Aires */
 .logoSedeBsAs{
     position: absolute;
-    left: 1rem;
-    top: 1.5rem;
+    width: 3%;
+    height: 1%;
+    flex-wrap: wrap;
 }
 
 .bodyBsas{
@@ -277,6 +278,7 @@ h1{
     gap: 30px;
     font-size: 3vw;
     padding-top: 30px;
+    flex-wrap: wrap;
     
 }
 
