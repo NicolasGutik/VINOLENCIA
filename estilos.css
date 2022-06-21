@@ -260,7 +260,7 @@ h1{
     background-size: cover;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
  
 }
 
@@ -276,7 +276,6 @@ h1{
 }
 
 .seccionProductos{
-    backdrop-filter: blur(20px);
     width: 100%;
     height: auto;
     display: flex;
@@ -366,7 +365,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -478,7 +477,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -587,7 +586,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     flex-wrap: wrap;
 
@@ -698,7 +697,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     flex-wrap: wrap;
 }
