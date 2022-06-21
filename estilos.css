@@ -253,6 +253,11 @@ h1{
 
 
 /* Sede Buenos Aires */
+.logoSedeBsAs{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
 
 .bodyBsas{
     background-image: url(./Img/fondoBsas.jpg);
@@ -357,6 +362,12 @@ h1{
     
 }
 /* Vino Tinto */
+
+.logoVinoTinto{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
 
 .bodyVinoTinto{
     background-image: url(./Img/fondoBsas.jpg);
@@ -470,6 +481,13 @@ h1{
 }
 
 /* Vino blanco */
+
+.logoVinoBlanco{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
+
 .bodyVinoBlanco{
     background-image: url(./Img/fondoBsas.jpg);
     background-repeat: no-repeat;
@@ -579,6 +597,12 @@ h1{
 }
 
 /* Vino Espumante */
+.logoVinoEspumante{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
+
 .bodyVinoEspumante{
     background-image: url(./Img/fondoBsas.jpg);
     background-repeat: no-repeat;
@@ -690,6 +714,12 @@ h1{
 }
 
 /*Vino Rosado */
+.logoVinoRosado{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
+
 .bodyVinoRosado{
     background-image: url(./Img/fondoBsas.jpg);
     background-repeat: no-repeat;
