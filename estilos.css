@@ -200,72 +200,6 @@ h1{
     color: black;
 }
 
-/* Productos */
-
-.productos{
-    display: flex;
-    gap: 30px;
-    justify-content: center;    
-}
-
-.producto{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.cardVino{
-    width: 250px;
-    height: 400px;
-    background-image: url(./Img/fondovino.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    border: 1px solid white;
-    flex-flow: column;
-    overflow: hidden;
-}
-
-.fotoVino{
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
-
-.desc-vino{
-    width: 100%;
-    height: 30%;
-    /* background-color: #2e1c29; */
-    background-color: #0000001e;
-    backdrop-filter: blur(4px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-}
-
-.botonComprar{
-    margin-right: 20px;
-    width: 150%;
-    height: 50px;
-    margin-top: 22px;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border-radius: 4px;
-    
-}
-
-.botonComprar:hover{
-    background-color: white;
-    color: black;
-}
-
 /* contacto */
 .contacto{
     display: flex;
@@ -320,24 +254,115 @@ h1{
 
 /* Sede Buenos Aires */
 
+.logoSedeBsAs{
+    position: absolute;
+    width: 5%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
 .bodyBsas{
     background-image: url(./Img/fondoBsas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* backdrop-filter: blur(22px); */
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+ 
 }
 
 .tituloBsAs{
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 3vw;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    
 }
 
 .seccionProductos{
-    backdrop-filter: blur(20px);
-    width: 70%;
-    height: 700px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
+   
+}
+
+.productos{
+    display: flex;
+    gap: 30px;
+    justify-content: center; 
+    width: 100%;
+    height: auto ;
+    flex-wrap: wrap;
+    
+}
+
+.producto{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto
+}
+
+.cardVino{
+    width: 80%;
+    height: 400px;
+    background-image: url(./Img/fondovino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid white;
+    flex-flow: column;
+    overflow: hidden;
+    height: auto;
+}
+
+.fotoVino{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.desc-vino{
+    width: 100%;
+    height: auto;
+    background-color: #0000001e;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.botonComprar{
+    margin-right: 20px;
+    width: 120%;
+    height: auto;
+    margin-top: 22px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    
+}
+
+.botonComprar:hover{
+    background-color: white;
+    color: black;
+    
 }
 
 /* Vino Tinto */
