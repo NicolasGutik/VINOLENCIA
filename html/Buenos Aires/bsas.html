@@ -14,8 +14,15 @@
             <h1 class="tituloBsAs">SEDE BUENOS AIRES </h1>
         </div>       
     </header>
-    <center><section class="seccionProductos">
-        <h2 class="tituloSeccion">Productos</h2>
+    <nav class="NavBar">
+        <ul class="links">
+            <li><a href="#productos">PRODUCTOS</a></li>
+            <li><a href="#sobre">SOBRE NOSOTROS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <center><section id="productos" class="seccionProductos">
+        <h2 class="tituloSeccionBSAS">Productos</h2>
         <div class="productos">
             <div class="producto">
                 <div class="cardVino">
@@ -36,7 +43,7 @@
                         <div class="vino-desc-cont">
                             <div class="info-vino">
                                 <div>
-                                    <img class="fotoVinoTinto" src="../../../Img/vino1.png" alt="vinoTinto">
+                                    <img class="fotoVinoTinto" src="../../Img/vino1.png" alt="vinoTinto">
                                 </div>
                                 <div class="fondoVino" >
                                     <h2 class="tituloVinoTinto">VINOLENCIA TINTO</h2>
@@ -70,18 +77,18 @@
                   <div class="modal" id="modal-three">
                     <div class="modal-bg-bsas modal-exit"></div>
                     <div class="modal-container-bsas">
-                        <div class="vinoBlanco-desc-cont">
+                        <div class="vino-desc-cont">
                             <div class="info-vinoBlanco">
                                 <div>
-                                    <img class="fotoVinoBlanco" src="../../../Img/vino2.png" alt="vinoBlanco">
+                                    <img class="fotoVinoBlanco" src="../../Img/vino2.png" alt="vinoBlanco">
                                 </div>
                                 <div class="fondoVinoBlanco" >
                                     <h2 class="tituloVinoTinto">VINOLENCIA BLANCO</h2>
                                     <h3 class="precioVinoBlanco">$1000</h3>
                                     <h4 class="estrellasVinoBlanco">⭐⭐⭐⭐⭐</h4>
                                     <p class="textoVinoBlanco">
-                                        Vinolencia Tinto nace en viñedos ubicados en Valle de Uco, Mendoza. Vino que se obtiene con uvas tintas y fermenta con el mosto y las pieles de las uvas.
-            La materia colorante que contiene la piel, formada por pigmentos insolubles en agua, se disuelve poco a poco en el alcohol producido por la fermentación y da al jugo en fermentación un color cada vez más oscuro.
+                                        Vinolencia Blanco nace en viñedos ubicados en Valle de Uco, Mendoza. Vino que se obtiene mediante la fermentación alcohólica de diferentes tipos de uvas blancas.
+                                        El vino blanco nos aporta minerales como potasio, flúor o fósforo. Además, es una de las bebidas alcohólicas que cuenta con menos calorías.
                                     </p>
                                     <input class="botonAgregarAlCarrito" type="button" value="Agregar al carrito">
                                 </div>
@@ -110,15 +117,15 @@
                         <div class="vino-desc-cont">
                             <div class="info-vino">
                                 <div>
-                                    <img class="fotoVinoTinto" src="../../../Img/vino1.png" alt="vinoTinto">
+                                    <img class="fotoVinoTinto" src="../../Img/vino3.png" alt="vinoEspumante">
                                 </div>
                                 <div class="fondoVino" >
-                                    <h2 class="tituloVinoTinto">VINOLENCIA TINTO</h2>
+                                    <h2 class="tituloVinoTinto">VINOLENCIA ESPUMANTE</h2>
                                     <h3 class="precio">$1000</h3>
                                     <h4 class="estrellas">⭐⭐⭐⭐⭐</h4>
                                     <p class="textoVinoTinto">
-                                        Vinolencia Tinto nace en viñedos ubicados en Valle de Uco, Mendoza. Vino que se obtiene con uvas tintas y fermenta con el mosto y las pieles de las uvas.
-            La materia colorante que contiene la piel, formada por pigmentos insolubles en agua, se disuelve poco a poco en el alcohol producido por la fermentación y da al jugo en fermentación un color cada vez más oscuro.
+                                        Vinolencia Espumante nace en viñedos ubicados en Valle de Uco, Mendoza. 
+                                        Los vinos espumantes son vinos con gas disuelto. El gas se consigue haciendo que haya una segunda fermentación dentro de la botella cerrada
                                     </p>
                                     <input class="botonAgregarAlCarrito" type="button" value="Agregar al carrito">
                                 </div>
@@ -147,15 +154,15 @@
                         <div class="vino-desc-cont">
                             <div class="info-vino">
                                 <div>
-                                    <img class="fotoVinoTinto" src="../../../Img/vino1.png" alt="vinoTinto">
+                                    <img class="fotoVinoTinto" src="../../Img/vino4.png" alt="vinoRosado">
                                 </div>
                                 <div class="fondoVino" >
-                                    <h2 class="tituloVinoTinto">VINOLENCIA TINTO</h2>
+                                    <h2 class="tituloVinoTinto">VINOLENCIA ROSADO</h2>
                                     <h3 class="precio">$1000</h3>
                                     <h4 class="estrellas">⭐⭐⭐⭐⭐</h4>
                                     <p class="textoVinoTinto">
-                                        Vinolencia Tinto nace en viñedos ubicados en Valle de Uco, Mendoza. Vino que se obtiene con uvas tintas y fermenta con el mosto y las pieles de las uvas.
-            La materia colorante que contiene la piel, formada por pigmentos insolubles en agua, se disuelve poco a poco en el alcohol producido por la fermentación y da al jugo en fermentación un color cada vez más oscuro.
+                                        Vinolencia Rosado nace en viñedos ubicados en Valle de Uco, Mendoza. 
+                                        El vino rosado se elabora estrujando las uvas y manteniendo una maceración de los hollejos con el mosto durante un tiempo en función de la cantidad de color y estructura que le queramos aportar.
                                     </p>
                                     <input class="botonAgregarAlCarrito" type="button" value="Agregar al carrito">
                                 </div>
@@ -167,6 +174,43 @@
             </div>
         </div>
     </center></section> 
+    <section id="sobre" class="seccionSnBSAS">
+        <div class="sobre">
+            <h2 class="tituloSeccionBSAS">SOBRE NOSOTROS</h2>
+            <div class="descBoxBSAS">
+                <p class="descripcionBSAS"> 
+                En la sede de VINOLENCIA Buenos Aires vendemos nuestros distintos tipos de vinos, los cuales podes comprar y te lo llevamos a cualquier parte de la Ciudad Autonoma de Buenos Aires, tambien te podes contactar con nosotros y ver donde queda nuestra sede, en la cual podes degustar de nuestro vinos y comprarlos ahi mismo.</p>
+            </div>    
+        </div>
+    </section>
+    <section  id="contacto" class="contacto">
+        <h2 class="tituloSeccionBSAS">CONTACTO</h2>
+        <iframe class="mapaBSAS" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9292.267160852482!2d-58.44882788263089!3d-34.570957012476654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5be7843c49f%3A0xc30fc5d6ce359706!2sVinology!5e0!3m2!1ses-419!2sar!4v1655939949331!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="infoBSAS">
+            <div>
+                <h3>Telefono</h3>
+                <p>1150367041</p>
+            </div>
+            <div>
+                <h3>Dias de Atencion</h3>
+                <p>lunes a sabados</p>
+            </div>
+            <div>
+                <h3>Horarios de Atención</h3>
+                <p>10:00 AM - 20:00 PM</p>
+            </div>
+        </div>   
+    </section>
+
+    <footer class="footerBSAS">    
+        <div class="itemsFooterBSAS">
+            <div class="boxMailBSAS">
+                <input class="mailBSAS" type="email" placeholder="   Escriba tu mail aqui">
+                <input class="botonEnviarBSAS" type="button" value="+informacion">
+            </div>
+            <p>Todos los derechos reservados  |  2022 ©  |  <a class="linkFooterBSAS" href="#"> VINOLENCIA.com</a></p>
+        </div>
+    </footer>
     <script src="../../scriptBsas.js"></script>
 </body>
 </html>

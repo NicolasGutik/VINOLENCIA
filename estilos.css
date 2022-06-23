@@ -364,8 +364,7 @@ h1{
     
 }
 
-/* Vino Tinto */
-
+/* Vinos*/
 .bodyVinoTinto{
     background-image: url(./Img/fondoBsas.jpg);
     background-repeat: no-repeat;
@@ -525,6 +524,127 @@ h1{
     font-weight: bold;
     font-size: 20px;
 }
+
+/*Sobre Nosotros, Contacto, Productos */
+
+.seccionSnBSAS{
+    background-color: rgba(39, 12, 12, 0.521);
+}
+
+.sobreBSAS{
+width: 100%;
+height: 100%;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+}
+
+.descripcionBSAS{
+font-family: 'Montserrat', sans-serif;
+color: white;
+text-align: center;
+font-weight: 600;
+}
+
+.descBoxBSAS{
+width: 60%;
+}
+
+.tituloSeccionBSAS{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+.tituloContacto{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    margin-top: 40px;
+}
+
+.infoBSAS{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    gap: 50px;
+}
+
+@media(max-width: 1000px){
+    .mapaBSAS{
+        width: 80vw;
+    }
+
+    .infoBSAS{
+        gap: 30px;
+    }
+}
+
+/*Footer BSAS */
+
+.footerBSAS{
+    background-color: #121212;
+    backdrop-filter: blur(10px);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.itemsFooterBSAS{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.boxMailBSAS{
+    background-color: white;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    justify-content: center;
+}
+
+.mailBSAS{ 
+    height: 35px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+}
+
+.botonEnviarBSAS{
+    width: 100px;
+    height: 100%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    background-color: #121212;
+    color: white;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+}
+
+.linkFooterBSAS{
+    text-decoration: none;
+    color: white;
+}
+
+
 /* Sede Mendoza */
 
 
