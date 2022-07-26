@@ -1,4 +1,6 @@
 const modals = document.querySelectorAll('[data-modal]');
+const linksMdz = document.getElementsByClassName('linksMdz')[0]
+
 
 modals.forEach(function (trigger) {
   trigger.addEventListener('click', function (event) {
@@ -15,4 +17,11 @@ modals.forEach(function (trigger) {
   });
 });
 
-
+function pruebaemail(valor){
+	re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+	if(!re.exec(valor)){
+		alert('email no valido');
+        console.log(valor)
+	}
+	else alert('se ha enviado un correo');
+}
